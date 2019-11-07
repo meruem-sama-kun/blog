@@ -25,13 +25,14 @@ SECRET_KEY = 'q=^=6ls!(m03achu72rzum8hku=13s%6)vo9brk#u(d_(b207x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["* "]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,6 +115,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOGOUt_REDIRECT_URL = 'home'
+    
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

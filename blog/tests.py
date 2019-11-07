@@ -24,3 +24,4 @@ class BlogTests(TestCase):
     def test_string_representation(self):
         post = Post(title='A sample title')
         self.assertEqual(str(post), post.title)
+    def test_get_absolute_url(self):
